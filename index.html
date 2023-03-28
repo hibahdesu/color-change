@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Colors</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        ul {
+        
+        background-color: #767676;
+        margin: 20px auto;
+        padding: 20px;
+        width: 150px;
+        border-radius: 32px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        
+      }
+      ul li {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        opacity: 0.2;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      ul li.active,
+      ul li:hover {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        opacity: 1;
+      }
+      ul li:first-child {
+        background-color: black;
+      }
+      ul li:nth-child(2) {
+        background-color: white;
+      }
+      ul li:nth-child(3) {
+        background-color: blue;
+      }
+    </style>
+</head>
+<body class="change">
+    <ul>
+        <li class="active" data-color="black"></li>
+        <li data-color="white"></li>
+        <li data-color="blue"></li>
+    </ul>
+    
+
+    <script src="pagecolor.js"></script>
+</body>
+</html>
